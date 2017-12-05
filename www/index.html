@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Hello World</title>
+        
+        <!-- Include jQuery Mobile stylesheets -->
+		<link rel="stylesheet" href="jquerymobile/jquery.mobile-1.4.5.min.css">
+		<!-- Include the jQuery library -->
+		<script src="js/jquery-2.1.0.js"></script>
+		<!-- Include the jQuery Mobile library -->
+		<script src="jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+         <link rel="stylesheet" href="jquery.ui.datepicker.mobile.css" />
+       <title>Notification assignment</title>
+    </head>
+    <body>
+<!-------------------------- FIRST PAGE -------------------------->
+<div data-role="page" id="page1">
+    
+	<div data-role="header">
+		<h1>Foo</h1>
+	</div><!-- /header -->
+    
+                <div data-role="panel" id="mypanel" data-position="left" data-display="push">
+                <a data-role="button" id="gotoPage3Butt" value="Page3">Calendar</a>
+                <a data-role="button" id="gotoPage2Butt" value="Notifications">Notifications</a>
+                
+            </div>            
+            
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <a href="#mypanel">Abrir panel</a>
+                <h1>Pol Felip</h1>
+            </div>
+
+	<div role="main" class="ui-content">
+        This is a app to organice your appointments, dates, classes...
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div>
+<!------------------------ END FIRST PAGE ------------------------>
+
+<!-------------------------- SECOND PAGE ------------------------->
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>Notifications</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<input type="button" value="LoadList" id="loadListButt">
+        
+        <div>
+            <ul data-role="listview" id="myList2">
+               
+            </ul>
+            
+        </div>
+        
+		<p><a href="#page1">Back to first page</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div>
+<!----------------------- END SECOND PAGE ------------------------>
+        
+<!-------------------------- THIRD PAGE -------------------------->
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>date and hour selector</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		  <div data-role="main" class="ui-content">
+    <h4>New notification:</h4>
+		<form>
+			Notification (date and time):
+			<input type="datetime-local" name="noti_datetime" id="noti_datetime">
+			<input type="button" value="SUBMIT" id="noti_btn_datetime"><br><hr>
+		</form>
+      
+          <ul data-role="listview" id="myList">
+          </ul>
+
+  </div>
+		<p><a href="#page1">Back to first page</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div>
+        
+<!------------------------ END THIRD PAGE ------------------------>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/moment.js"></script>
+        <script src="jQuery.ui.datepicker.js"></script>
+        <script src="jquery.ui.datepicker.mobile.js"></script>
+        
+    </body>
+</html>

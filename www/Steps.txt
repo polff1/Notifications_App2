@@ -1,0 +1,8 @@
+Hello Vittorio,
+
+The first step I toke was changing the app icon. In 'config.html' file I put this line of code:
+<icon src="res\icon\android\ic_launcher.png" />
+Previously, I searched the image in Internet and paste in the indicate folder.
+
+Althow I achieved to do a panel with a button called "Schedule" with a day and a hour picker, the sumit button
+doesn't work. I tried to do my best but I couldn't do it.
